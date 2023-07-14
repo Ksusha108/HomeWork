@@ -6,8 +6,11 @@
 Console.WriteLine("напишите цифру дня недели: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
-if (n >= 6 ) Console.WriteLine("это выходной день");
-else
+if (n < 1 && n > 7)
 {
-    Console.WriteLine("это будний день");
+    Console.WriteLine("Это не день недели! Введите цифру дня недели");
+}
+else if (n == 6 && n == 7 ) 
+{
+    Console.WriteLine("это выходной день");
 }
